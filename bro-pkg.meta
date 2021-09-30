@@ -1,0 +1,4 @@
+[package]
+description = Detects the usage of default SNMP community strings
+tags = snmp
+script_dir = scripts
