@@ -1,5 +1,4 @@
-Default SNMP Communtiy String Detection
-======================
+# Default SNMP Communtiy String Detection
 
 Example Zeek package script for detecting and alerting on default usage of SNMP community strings.
 
@@ -7,28 +6,34 @@ This is a simple example and primarly used for training purposes and learning ho
 
 If you're sending Zeek logs to a log collection system, you can replicate this behavior with default logs and alerting. 
 
-Installation/Upgrade
-------------
+## Installation/Upgrade
+
 
 This is easiest to install through the Bro package manager::
 
-	bro-pkg refresh
-	bro-pkg install nturley3/zeek-snmp-community
+	zkg refresh
+	zkg install nturley3/zeek-snmp-community
 
 If you need to upgrade the package::
 
-	bro-pkg refresh
-	bro-pkg upgrade nturley3/zeek-snmp-community
+	zkg refresh
+	zkg upgrade nturley3/zeek-snmp-community
 
-Usage
------
+## Generated Outputs
 
 This script generates the following notices: 
 
-**SNMP::Default_Community_String** - Indicates a default community string was detected
+| Notice Name | Description |
+| -- | -- |
+| SNMP::Default_Community_String | Indicates a default community string was detected. |
 
-About
------
+## Usage
+
+Security analysts can use the data generated here to identify systems with weak SNMP security.
+
+Tags: Hygiene
+
+## About
 
 Written by Nick Turley <nickturley@gmail.com>
 

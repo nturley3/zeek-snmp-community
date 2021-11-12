@@ -1,4 +1,4 @@
-##! Bro script is used to detect usage of default community strings on campus networks
+##! Zeek script is used to detect usage of default community strings.
 
 @load base/frameworks/notice
 
